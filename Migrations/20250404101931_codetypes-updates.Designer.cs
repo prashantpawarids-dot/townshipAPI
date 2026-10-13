@@ -81,7 +81,7 @@ namespace Township_API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("MiddletName")
+                    b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -189,7 +189,7 @@ namespace Township_API.Migrations
                     b.Property<int>("LogicalDeleted")
                         .HasColumnType("int");
 
-                    b.Property<string>("MiddletName")
+                    b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -306,7 +306,7 @@ namespace Township_API.Migrations
                     b.Property<int>("LogicalDeleted")
                         .HasColumnType("int");
 
-                    b.Property<string>("MiddletName")
+                    b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -492,7 +492,7 @@ namespace Township_API.Migrations
                     b.Property<int>("LogicalDeleted")
                         .HasColumnType("int");
 
-                    b.Property<string>("MiddletName")
+                    b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -597,7 +597,7 @@ namespace Township_API.Migrations
                     b.Property<int>("LogicalDeleted")
                         .HasColumnType("int");
 
-                    b.Property<string>("MiddletName")
+                    b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -711,7 +711,7 @@ namespace Township_API.Migrations
                     b.Property<int>("LogicalDeleted")
                         .HasColumnType("int");
 
-                    b.Property<string>("MiddletName")
+                    b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

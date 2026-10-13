@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\IDS\\SmartCard\\Township-API_SQL\\",
+  "WorkspaceRootPath": "D:\\IDSProjects\\Township-API_SQL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\ids\\smartcard\\township-api_sql\\controllers\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controllers\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\idsprojects\\township-api_sql\\models\\commonclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:models\\commonclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\ids\\smartcard\\township-api_sql\\controllers\\nrdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controllers\\nrdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\idsprojects\\township-api_sql\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\ids\\smartcard\\township-api_sql\\controllers\\landownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controllers\\landownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\idsprojects\\township-api_sql\\models\\contractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:models\\contractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\idsprojects\\township-api_sql\\controller\\contractorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\contractorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\idsprojects\\township-api_sql\\controller\\a_idcardprintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\a_idcardprintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|d:\\idsprojects\\township-api_sql\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,9 +33,55 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "DockedWidth": 149,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommonClass.cs",
+              "DocumentMoniker": "D:\\IDSProjects\\Township-API_SQL\\Models\\CommonClass.cs",
+              "RelativeDocumentMoniker": "Models\\CommonClass.cs",
+              "ToolTip": "D:\\IDSProjects\\Township-API_SQL\\Models\\CommonClass.cs",
+              "RelativeToolTip": "Models\\CommonClass.cs",
+              "ViewState": "AgIAAHABAAAAAAAAAAA4wFsBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T08:07:05.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contractor.cs",
+              "DocumentMoniker": "D:\\IDSProjects\\Township-API_SQL\\Models\\Contractor.cs",
+              "RelativeDocumentMoniker": "Models\\Contractor.cs",
+              "ToolTip": "D:\\IDSProjects\\Township-API_SQL\\Models\\Contractor.cs",
+              "RelativeToolTip": "Models\\Contractor.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA8wCsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T06:04:01.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -38,23 +96,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -73,43 +119,157 @@
               "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:157:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:158:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:156:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:155:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:154:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:159:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:153:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:152:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "D:\\IDS\\SmartCard\\Township-API_SQL\\Controllers\\Profile.cs",
-              "RelativeDocumentMoniker": "Controllers\\Profile.cs",
-              "ToolTip": "D:\\IDS\\SmartCard\\Township-API_SQL\\Controllers\\Profile.cs",
-              "RelativeToolTip": "Controllers\\Profile.cs",
-              "ViewState": "AgIAACQAAACAmZmZmZk9wOQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ContractorController.cs",
+              "DocumentMoniker": "D:\\IDSProjects\\Township-API_SQL\\Controller\\ContractorController.cs",
+              "RelativeDocumentMoniker": "Controller\\ContractorController.cs",
+              "ToolTip": "D:\\IDSProjects\\Township-API_SQL\\Controller\\ContractorController.cs",
+              "RelativeToolTip": "Controller\\ContractorController.cs",
+              "ViewState": "AgIAAMwBAAAAAAAAAADwv1kBAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:44:49.845Z",
+              "WhenOpened": "2026-05-12T06:03:39.685Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\IDSProjects\\Township-API_SQL\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\IDSProjects\\Township-API_SQL\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAABYCAAAAAAAAAAAYwBgCAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:26:29.792Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NRDController.cs",
-              "DocumentMoniker": "D:\\IDS\\SmartCard\\Township-API_SQL\\Controllers\\NRDController.cs",
-              "RelativeDocumentMoniker": "Controllers\\NRDController.cs",
-              "ToolTip": "D:\\IDS\\SmartCard\\Township-API_SQL\\Controllers\\NRDController.cs",
-              "RelativeToolTip": "Controllers\\NRDController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "D:\\IDSProjects\\Township-API_SQL\\Data\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDBContext.cs",
+              "ToolTip": "D:\\IDSProjects\\Township-API_SQL\\Data\\AppDBContext.cs",
+              "RelativeToolTip": "Data\\AppDBContext.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAIA0wFUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:44:01.083Z",
+              "WhenOpened": "2026-05-08T08:09:32.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LandownerController.cs",
-              "DocumentMoniker": "D:\\IDS\\SmartCard\\Township-API_SQL\\Controllers\\LandownerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LandownerController.cs",
-              "ToolTip": "D:\\IDS\\SmartCard\\Township-API_SQL\\Controllers\\LandownerController.cs",
-              "RelativeToolTip": "Controllers\\LandownerController.cs",
-              "ViewState": "AgIAABMAAACAZmZmZmYWwBoAAABJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "A_IDCardPrintController.cs",
+              "DocumentMoniker": "D:\\IDSProjects\\Township-API_SQL\\Controller\\A_IDCardPrintController.cs",
+              "RelativeDocumentMoniker": "Controller\\A_IDCardPrintController.cs",
+              "ToolTip": "D:\\IDSProjects\\Township-API_SQL\\Controller\\A_IDCardPrintController.cs",
+              "RelativeToolTip": "Controller\\A_IDCardPrintController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T08:24:14.493Z",
+              "WhenOpened": "2026-04-30T09:21:21.626Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

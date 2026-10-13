@@ -21,7 +21,7 @@ namespace Township_API.Models
         public string? VoterID { get; set; }
         [Required]
         public string FirstName { get; set; }
-        public string? MiddletName { get; set; }
+        public string? MiddleName { get; set; }
         [Required] 
         public string? LastName { get; set; }
         public string? ShortName { get; set; }
@@ -69,7 +69,7 @@ namespace Township_API.Models
         public string? VoterID { get; set; }
         [Required]
         public string FirstName { get; set; }
-        public string MiddletName { get; set; }
+        public string MiddleName { get; set; }
         [Required]
         public string LastName { get; set; }
         public string? ShortName { get; set; }

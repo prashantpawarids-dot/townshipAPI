@@ -56,7 +56,7 @@ namespace Township_API.Controllers
                 ExistingVisitor.AadharCardId = UpdatedVisitor.AadharCardId;
                 ExistingVisitor.VoterID = UpdatedVisitor.VoterID;
                 ExistingVisitor.FirstName = UpdatedVisitor.FirstName;
-                ExistingVisitor.MiddletName = UpdatedVisitor.MiddletName;
+                ExistingVisitor.MiddleName = UpdatedVisitor.MiddleName;
                 ExistingVisitor.LastName = UpdatedVisitor.LastName;
                 ExistingVisitor.ShortName = UpdatedVisitor.ShortName;
                 ExistingVisitor.Gender = UpdatedVisitor.Gender;
@@ -80,8 +80,9 @@ namespace Township_API.Controllers
                 _context.Entry(ExistingVisitor).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
 
-                return Ok(new { message = $"{ExistingVisitor.ID}   Visitor updated successfully" });
+               // return Ok(new { message = $"{ExistingVisitor.ID}   Visitor updated successfully" });
 
+                return Ok(new { Message = $"Visitor Updated successfully", IDNumber = ExistingVisitor.IDNumber });
             }
             catch (Exception ex)
             {
@@ -106,8 +107,8 @@ namespace Township_API.Controllers
                 int number = (int)AccessCardHolders.Visitor;
                 obj.IDNumber = number.ToString() + obj.ID.ToString("D4");
                 await _context.SaveChangesAsync();
-
-                return Ok(new { message = $"{obj.ID} Visitor created successfully" });
+                 
+                return Ok(new { Message = $"Visitor Added successfully", IDNumber = obj.IDNumber });
 
             }
             catch (Exception ex)

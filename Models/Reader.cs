@@ -23,5 +23,7 @@ namespace Township_API.Models
         public bool? isActive { get; set; } = true;
         public bool? IsDeleted { get; set; } = false;
 
+        [NotMapped]
+        public string? nrdName { get; set; } = null;
     }
 }

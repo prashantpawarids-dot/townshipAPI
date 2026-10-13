@@ -56,6 +56,11 @@ namespace Township_API.Models
         public int? roleID { get; set; }
         [NotMapped]
         public Role? Role { get; set; }
+
+
+        [NotMapped]
+        public string? ProfileName { get; set; }
+
         [NotMapped]
         public Company? Company { get; set; }
     }
@@ -75,8 +80,9 @@ namespace Township_API.Models
         public DateTime? CreatedOn { get; set; } = null;
         public int? UpdatedBy { get; set; }
         public DateTime? UpdatedOn { get; set; } = null;
-        public int? Companyid { get; set; }
-
+        public int? Companyid { get; set; } 
+        public int? Uid { get; set; } = 0; 
+        public int? RoleId { get; set; } = 0;  
     }
 
     //ProfileDetails tblProfileDetails
@@ -89,7 +95,7 @@ namespace Township_API.Models
         [ForeignKey("Profile")]
         public int? profileid { get; set; }
         public Profile? profile { get; set; }
-        
+
         [ForeignKey("Module")]
         public int? moduleId { get; set; }
         public _module? module { get; set; }
@@ -139,6 +145,7 @@ namespace Township_API.Models
         public string Code { get; set; }
         [Required]
         public int? TypeID { get; set; } = 0;
+
         public int ParentID { get; set; } = 0;
         public string? ModuleType { get; set; } = null;
         public string? Discriminator { get; set; } = null;
@@ -149,11 +156,10 @@ namespace Township_API.Models
         public int? updatedby { get; set; } = 0;
         public DateTime? updatedon { get; set; } = null;
 
-
-        
+        [NotMapped]
+        public string? ParentName { get; set; } = null;
 
     }
-
     public abstract class ModuleDataTemplate : ModuleData
     {
         [Key]
@@ -171,7 +177,6 @@ namespace Township_API.Models
         //  public int? TypeID { get; set; } = null;
 
     }
-
     public class NRD : ModuleData
     {
         //public List<Building> Buildings { get; set; }
@@ -202,9 +207,9 @@ namespace Township_API.Models
         [Required]
         [MaxLength(50)]
         public string FirstName { get; set; } = "";
-        [MaxLength(50)] 
+        [MaxLength(50)]
 
-        [DisplayName("MiddletName")]
+        [DisplayName("MiddleName")]
         public string? MiddleName { get; set; } = "";
         [Required]
         [MaxLength(50)]
@@ -223,14 +228,20 @@ namespace Township_API.Models
         public int? ResidentID { get; set; } = 0;
         public int? SiteID { get; set; }
         public string? Role { get; set; }
-        public int? isactive { get; set; } = 0; 
-        public int? isdeleted { get; set; } = 0; 
+        public int? isactive { get; set; } = 0;
+        public int? isdeleted { get; set; } = 0;
         public int? createdby { get; set; } = 0;
         public DateTime? createdon { get; set; } = null;
         public int? updatedby { get; set; } = 0;
         public DateTime? updatedon { get; set; } = null;
+        public string? BloodGroup { get; set; } = null;
         [NotMapped]
         public string? sitename { get; set; } = null;
+
+        [NotMapped]
+        public string? EmployeeCompany { get; set; } = null;
+
+        public int? EmployeeCompanyID { get; set; }
     }
 
     //[Table("tblServiceProvider")]
@@ -263,7 +274,81 @@ namespace Township_API.Models
 
         public string FirstName { get; set; }
 
-        public string? MiddletName { get; set; }
+        public string? MiddleName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string? ShortName { get; set; }
+
+        public int ServiceTypeId { get; set; }
+
+        public string? ICEno { get; set; }
+
+        public string? AadharCardId { get; set; }
+
+        public string? VoterID { get; set; }
+
+        public string? EmailID { get; set; }
+
+        public string? Gender { get; set; }
+
+        public string? BloodGroup { get; set; }
+
+        public string? MobileNo { get; set; }
+
+        public string? CSN { get; set; }
+
+        public DateTime? Doj { get; set; }
+
+        public DateTime? CardIssueDate { get; set; }
+
+        public DateTime? CardPrintingDate { get; set; }
+
+        public DateTime? ValidFromDate { get; set; }
+
+        public DateTime? ValidToDate { get; set; }
+
+        public string? Address { get; set; }
+
+        public string? Refrence1ID { get; set; }
+
+        public string? Refrence1Name { get; set; }
+
+        public string? Refrence1Mobile { get; set; }
+
+        public string? Refrence2Name { get; set; }
+
+        public string? Refrence2Mobile { get; set; }
+
+        public string? Refrence2Details { get; set; }
+
+        public int? isActive { get; set; } = 0;
+
+        public int? isDeleted { get; set; } = 0;
+
+        public DateTime? CreatedOn { get; set; }
+
+        public int CreatedBy { get; set; } = 0;
+
+        public DateTime? UpdatedOn { get; set; }
+
+        public int? UpdatedBy { get; set; } = 0;
+        [NotMapped]
+        public string? serviceType { get; set; }
+         
+        public string? FlatNumber { get; set; }  
+
+    }
+
+    public class Service_Provider_view
+    {
+        public int ID { get; set; }
+
+        public string IDNumber { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string? MiddleName { get; set; }
 
         public string LastName { get; set; }
 
@@ -325,8 +410,13 @@ namespace Township_API.Models
         [NotMapped]
         public string? serviceType { get; set; }
 
-    }
+        [NotMapped]
+        public string? Neighbourhood { get; set; } = null;
 
+        [NotMapped]
+        public string? Buildings { get; set; } = null;
+
+    }
 
     [Table("tblVehicle")]
     public class Vehicle
@@ -340,6 +430,7 @@ namespace Township_API.Models
         public string? vType { get; set; }
         public string? vMake { get; set; }
         public string? vColor { get; set; }
+
         public string? TagUID { get; set; }
         public string? PrintedTagID { get; set; }
         public DateTime? TagEncodingDate { get; set; }
@@ -350,8 +441,56 @@ namespace Township_API.Models
         public DateTime? createdon { get; set; } = null;
         public int? updatedby { get; set; } = null;
         public DateTime? updatedon { get; set; } = null;
+
+        public string? IsUploadedToANPR { get; set; } = "N";
+
+        /*
+        [NotMapped]
+        public int? OwnerID { get; set; }
+        [NotMapped]
+        public string? IDNumber { get; set; }
+        [NotMapped]
+        public string? shortname { get; set; }
+        [NotMapped]
+        public string? nrd { get; set; }
+        [NotMapped]
+        public string? Building { get; set; }
+        [NotMapped]
+        public string? FlatNumber { get; set; }
+        */
     }
 
+    public class vwVehicle
+    {
+
+        [Key]
+        public int ID { get; set; }
+
+        [Required, MaxLength(50)]
+        public string? RegNo { get; set; }
+        public string? vType { get; set; }
+        public string? vMake { get; set; }
+        public string? vColor { get; set; }
+
+        public string? TagUID { get; set; }
+        public string? PrintedTagID { get; set; }
+        public DateTime? TagEncodingDate { get; set; }
+        public int? Logical_Delete { get; set; }
+        public string? StickerNo { get; set; }
+        public int? isactive { get; set; } = 0;
+        public int? createdby { get; set; } = null;
+        public DateTime? createdon { get; set; } = null;
+        public int? updatedby { get; set; } = null;
+        public DateTime? updatedon { get; set; } = null;
+
+        //public int? OwnerID { get; set; }
+        public string? IDNumber { get; set; }
+        public string? shortname { get; set; }
+        public string? nrd { get; set; }
+        public string? Building { get; set; }
+        public string? FlatNumber { get; set; }
+
+    }
 
     [Table("tblDoorAccess")]
     public class DoorAccess
@@ -379,18 +518,25 @@ namespace Township_API.Models
     }
     public class AllCardHolder
     {
-        public string CardType { get; set; }
-        public int id { get; set; }
-        public int pid { get; set; }
-        public string IDNumber { get; set; }
-        public string shortname { get; set; }
-        public string CSN { get; set; }
-        public string Building { get; set; }
-        public string FlatNumber { get; set; }
-        public DateTime? CardPrintingDate { get; set; }
-        public DateTime? CardIssueDate { get; set; }
-        public string Bld { get; set; }
-        public string NRD { get; set; }
+        public string? CardType { get; set; }
+        public int id { get; set; } = 0;
+        public int pid { get; set; }= 0;
+        public string? IDNumber { get; set; }
+        public string? shortname { get; set; }
+        public string? CSN { get; set; }
+        public string? Building { get; set; }
+        public string? FlatNumber { get; set; }
+        public DateTime? CardPrintingDate { get; set; }=null;
+        public DateTime? CardIssueDate { get; set; } = null;
+        public string? Bld { get; set; }
+        public string? NRD { get; set; }
+        public string? BloodGroup { get; set; } = null;
+        public DateTime? validTill { get; set; } = null;
+
+        public string? templateName { get; set; } = null;
+        public string? custom1 { get; set; } = null;
+        public string? custom2 { get; set; } = null;
+
     }
     public class UserALLAccess
     {
@@ -428,7 +574,6 @@ namespace Township_API.Models
         public string? isactive { get; set; }
         public string? isdeleted { get; set; }
     }
-
     public class UserAmenitiesAccess
     {
         public string? ModuleName { get; set; }
@@ -445,7 +590,6 @@ namespace Township_API.Models
         public string? isactive { get; set; }
         public string? isdeleted { get; set; }
     }
-
     public class UserBuildingAccess
     {
         public string? ModuleName { get; set; }
@@ -462,6 +606,43 @@ namespace Township_API.Models
         public string? isactive { get; set; }
         public string? isdeleted { get; set; }
     }
+    public class VehicleAccessInout
+    {
+        public int Cameraid { get; set; }
+        public string CameraLocation { get; set; }
+        public string VehicleNumber { get; set; }
+        public string InoutFlag { get; set; }
+        public DateTime InoutTime { get; set; }
+        public string TagUID { get; set; }
+        public string IDNumber { get; set; }
+        public string OwnerName { get; set; }
+        public string Building { get; set; }
+        public string CardType { get; set; }
+    }
 
+    public class NRDFlatDetails
+    {
+        public string NRD { get; set; }
+        public string BuildingName { get; set; }
+        public string Building { get; set; }
+        public string FlatNumber { get; set; }
 
+    }
+
+    public class BuildingRequestDto
+    {
+        public List<string> BuildingFlats { get; set; }
+    }
+    public class CardRefBuildings
+    {
+        public int CardId { get; set; }
+        public string BuildingFlats { get; set; } // stored as CSV
+    }
+    public class _Building
+    {
+        public int Id { get; set; }
+        public string BuildingFlats { get; set; } // stored as CSV
+    }
+
+    
 }

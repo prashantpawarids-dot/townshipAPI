@@ -44,7 +44,7 @@ namespace Township_API.Controllers
             existingContractor.AadharCardId = updatedContractor.AadharCardId;
             existingContractor.VoterID = updatedContractor.VoterID;
             existingContractor.FirstName = updatedContractor.FirstName;
-            existingContractor.MiddletName = updatedContractor.MiddletName;
+            existingContractor.MiddleName = updatedContractor.MiddleName;
             existingContractor.LastName = updatedContractor.LastName;
             existingContractor.ShortName = updatedContractor.ShortName;
             existingContractor.Gender = updatedContractor.Gender;
@@ -68,7 +68,8 @@ namespace Township_API.Controllers
 
             _context.Entry(existingContractor).State = EntityState.Modified;
             await _context.SaveChangesAsync();
-            return Ok(existingContractor);
+
+            return Ok(new { Message = $"Contractor Updated Successfully", IDNumber = existingContractor.IDNumber });
         }
 
         [HttpPost("AddContractor")]
@@ -110,7 +111,7 @@ namespace Township_API.Controllers
             obj.IDNumber = number.ToString() + obj.ID.ToString("D5"); 
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok(new { Message = $"Contractor Added successfully", IDNumber = obj.IDNumber });
         }
 
 
@@ -241,7 +242,7 @@ namespace Township_API.Controllers
                         existingContractor.AadharCardId = objID.AadharCardId;
                         existingContractor.VoterID = objID.VoterID;
                         existingContractor.FirstName = objID.FirstName;
-                        existingContractor.MiddletName = objID.MiddletName;
+                        existingContractor.MiddleName = objID.MiddleName;
                         existingContractor.LastName = objID.LastName;
                         existingContractor.ShortName = objID.ShortName;
                         existingContractor.Gender = objID.Gender;

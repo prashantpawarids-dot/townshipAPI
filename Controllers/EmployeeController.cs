@@ -54,7 +54,7 @@ namespace Township_API.Controllers
                 }
 
 
-                //existingEmployee.IDNumber = updatedEmployee.IDNumber;
+                existingEmployee.IDNumber = updatedEmployee.IDNumber;
                 existingEmployee.FirstName = updatedEmployee.FirstName;
                 existingEmployee.MiddleName = updatedEmployee.MiddleName;
                 existingEmployee.LastName = updatedEmployee.LastName;
@@ -77,7 +77,8 @@ namespace Township_API.Controllers
                 _context.Entry(existingEmployee).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
 
-                return Ok(existingEmployee);
+
+                return Ok(new { message = $"Employee Updated successfully", IDNumber = existingEmployee.IDNumber });
             }
             catch (Exception ex)
             {
@@ -106,11 +107,10 @@ namespace Township_API.Controllers
                 _context.Add(obj);
                 _context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT tblEmployee OFF");
                 await _context.SaveChangesAsync();
-                int number = (int)AccessCardHolders.Employee;
-                obj.IDNumber = number.ToString() + obj.ID.ToString("D4");
-
-                await _context.SaveChangesAsync();
-                return Ok(new { message = $"{obj.IDNumber} Employee Added successfully" });
+                //int number = (int)AccessCardHolders.Employee;
+                //obj.IDNumber = number.ToString() + obj.ID.ToString("D4");
+                //await _context.SaveChangesAsync();
+                return Ok(new { message = $"Employee Added successfully" ,IDNumber= obj.IDNumber });
             }
             catch (Exception ex)
             {

@@ -57,8 +57,7 @@ namespace Township_API.Controllers
             int number = (int)AccessCardHolders.Resident;
             obj.IDNumber = number.ToString() + obj.ID.ToString("D5");
             await _context.SaveChangesAsync();
-
-            return Ok();
+             return Ok(new { message = $"Dependent Resident Added successfully", IDNumber = obj.IDNumber });
         }
 
 

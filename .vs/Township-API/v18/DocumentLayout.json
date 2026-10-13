@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\models\\commonclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:models\\commonclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\anprcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\anprcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\models\\backupsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:models\\backupsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\models\\vehiclenrdaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:models\\vehiclenrdaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\nrdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\nrdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\services\\ffmpegliveviewhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:services\\ffmpegliveviewhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\cameralivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\cameralivecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\services\\semaccontrollerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:services\\semaccontrollerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\services\\cameraauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:services\\cameraauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\services\\camerapingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:services\\camerapingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\tenentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\tenentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\guestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\guestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\serviceproviderownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\serviceproviderownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\service_providercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\service_providercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\semaccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\semaccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\controller\\idssemaccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:controller\\idssemaccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\services\\actorasyncextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:services\\actorasyncextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|c:\\users\\dell\\desktop\\prashant pawar project\\township backend\\township-api_sql 120520261353\\township-api_sql\\hubs\\transactionhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB34905F-80E7-4FB4-A8F5-2D9E5CEDD145}|Township-API.csproj|solutionrelative:hubs\\transactionhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 149,
+          "SelectedChildIndex": 52,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:157:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:158:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:156:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:155:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:154:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:159:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:153:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:152:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Data\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Data\\AppDBContext.cs",
+              "RelativeToolTip": "Data\\AppDBContext.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAApwFcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T04:22:44.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BackupSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Models\\BackupSettings.cs",
+              "RelativeDocumentMoniker": "Models\\BackupSettings.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Models\\BackupSettings.cs",
+              "RelativeToolTip": "Models\\BackupSettings.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAxwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T08:54:35.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AiController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\AiController.cs",
+              "RelativeDocumentMoniker": "Controller\\AiController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\AiController.cs",
+              "RelativeToolTip": "Controller\\AiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T10:30:42.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VehicleNRDAccess.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Models\\VehicleNRDAccess.cs",
+              "RelativeDocumentMoniker": "Models\\VehicleNRDAccess.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Models\\VehicleNRDAccess.cs",
+              "RelativeToolTip": "Models\\VehicleNRDAccess.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T09:14:56.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NRDController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\NRDController.cs",
+              "RelativeDocumentMoniker": "Controller\\NRDController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\NRDController.cs",
+              "RelativeToolTip": "Controller\\NRDController.cs",
+              "ViewState": "AgIAANIJAAAAAAAAAAAwwN4JAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T09:14:11.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TenentController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\TenentController.cs",
+              "RelativeDocumentMoniker": "Controller\\TenentController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\TenentController.cs",
+              "RelativeToolTip": "Controller\\TenentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwCAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T15:37:42.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FfmpegLiveViewHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\FfmpegLiveViewHandler.cs",
+              "RelativeDocumentMoniker": "Services\\FfmpegLiveViewHandler.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\FfmpegLiveViewHandler.cs",
+              "RelativeToolTip": "Services\\FfmpegLiveViewHandler.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAwwIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T15:16:51.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-25T15:14:16.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CameraAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\CameraAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\CameraAuthService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\CameraAuthService.cs",
+              "RelativeToolTip": "Services\\CameraAuthService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwvzUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T15:13:10.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CameraLiveController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\CameraLiveController.cs",
+              "RelativeDocumentMoniker": "Controller\\CameraLiveController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\CameraLiveController.cs",
+              "RelativeToolTip": "Controller\\CameraLiveController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAIAwwFsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T12:04:50.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CameraPingService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\CameraPingService.cs",
+              "RelativeDocumentMoniker": "Services\\CameraPingService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\CameraPingService.cs",
+              "RelativeToolTip": "Services\\CameraPingService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T12:02:43.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GuestController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\GuestController.cs",
+              "RelativeDocumentMoniker": "Controller\\GuestController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\GuestController.cs",
+              "RelativeToolTip": "Controller\\GuestController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAYwJoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T09:06:57.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ServiceProviderOwnersController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\ServiceProviderOwnersController.cs",
+              "RelativeDocumentMoniker": "Controller\\ServiceProviderOwnersController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\ServiceProviderOwnersController.cs",
+              "RelativeToolTip": "Controller\\ServiceProviderOwnersController.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAUwAMBAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T08:56:16.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Service_ProviderController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\Service_ProviderController.cs",
+              "RelativeDocumentMoniker": "Controller\\Service_ProviderController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\Service_ProviderController.cs",
+              "RelativeToolTip": "Controller\\Service_ProviderController.cs",
+              "ViewState": "AgIAAJcBAAAAAAAAAAAUwLQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T08:55:36.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommonClass.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Models\\CommonClass.cs",
+              "RelativeDocumentMoniker": "Models\\CommonClass.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Models\\CommonClass.cs",
+              "RelativeToolTip": "Models\\CommonClass.cs",
+              "ViewState": "AgIAADUBAAAAAAAAAIAywDkBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T07:51:57.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\ReportController.cs",
+              "RelativeDocumentMoniker": "Controller\\ReportController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\ReportController.cs",
+              "RelativeToolTip": "Controller\\ReportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-24T07:51:01.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ANPRController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\ANPRController.cs",
+              "RelativeDocumentMoniker": "Controller\\ANPRController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\ANPRController.cs",
+              "RelativeToolTip": "Controller\\ANPRController.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAAAwEEBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T07:18:09.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ActorAsyncExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\ActorAsyncExtensions.cs",
+              "RelativeDocumentMoniker": "Services\\ActorAsyncExtensions.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\ActorAsyncExtensions.cs",
+              "RelativeToolTip": "Services\\ActorAsyncExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T06:15:59.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SemacController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\SemacController.cs",
+              "RelativeDocumentMoniker": "Controller\\SemacController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\SemacController.cs",
+              "RelativeToolTip": "Controller\\SemacController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:55:29.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SemacControllerService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\SemacControllerService.cs",
+              "RelativeDocumentMoniker": "Services\\SemacControllerService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Services\\SemacControllerService.cs",
+              "RelativeToolTip": "Services\\SemacControllerService.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAAAK4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:47:49.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TransactionHub.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Hubs\\TransactionHub.cs",
+              "RelativeDocumentMoniker": "Hubs\\TransactionHub.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Hubs\\TransactionHub.cs",
+              "RelativeToolTip": "Hubs\\TransactionHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T11:47:00.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwFMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-08T07:32:03.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDSsemacController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\IDSsemacController.cs",
+              "RelativeDocumentMoniker": "Controller\\IDSsemacController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\PRASHANT PAWAR PROJECT\\Township BACKEND\\Township-API_SQL 120520261353\\Township-API_SQL\\Controller\\IDSsemacController.cs",
+              "RelativeToolTip": "Controller\\IDSsemacController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T09:16:54.487Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

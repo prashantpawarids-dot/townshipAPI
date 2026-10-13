@@ -55,7 +55,7 @@ namespace Township_API.Controllers
                 existingGuest.AadharCardId = updatedGuest.AadharCardId;
                 existingGuest.VoterID = updatedGuest.VoterID;
                 existingGuest.FirstName = updatedGuest.FirstName;
-                existingGuest.MiddletName = updatedGuest.MiddletName;
+                existingGuest.MiddleName = updatedGuest.MiddleName;
                 existingGuest.LastName = updatedGuest.LastName;
                 existingGuest.ShortName = updatedGuest.ShortName;
                 existingGuest.Gender = updatedGuest.Gender;
@@ -77,7 +77,7 @@ namespace Township_API.Controllers
                 _context.Entry(existingGuest).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
 
-                return Ok(new { message = $"{existingGuest.ID}   Guest updated successfully" });
+                return Ok(new { message = $"Guest Updated successfully", IDNumber = existingGuest.IDNumber });
 
             }
             catch (Exception ex)
@@ -103,8 +103,8 @@ namespace Township_API.Controllers
                 int number = (int)AccessCardHolders.Guest;
                 obj.IDNumber = number.ToString() + obj.ID.ToString("D5");
                 await _context.SaveChangesAsync();
-
-                return Ok(new { message = $"{obj.IDNumber} Guest created successfully" });
+                 
+                return Ok(new { message = $"Guest Added successfully", IDNumber = obj.IDNumber });
 
             }
             catch (Exception ex)
@@ -201,7 +201,7 @@ namespace Township_API.Controllers
                         existingGuest.AadharCardId = objID.AadharCardId;
                         existingGuest.VoterID = objID.VoterID;
                         existingGuest.FirstName = objID.FirstName;
-                        existingGuest.MiddletName = objID.MiddletName;
+                        existingGuest.MiddleName = objID.MiddleName;
                         existingGuest.LastName = objID.LastName;
                         existingGuest.ShortName = objID.ShortName;
                         existingGuest.Gender = objID.Gender;

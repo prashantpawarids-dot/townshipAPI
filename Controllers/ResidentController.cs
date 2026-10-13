@@ -55,7 +55,7 @@ namespace Township_API.Controllers
                 existingResident.AadharCardId = updatedResident.AadharCardId;
                 existingResident.VoterID = updatedResident.VoterID;
                 existingResident.FirstName = updatedResident.FirstName;
-                existingResident.MiddletName = updatedResident.MiddletName;
+                existingResident.MiddleName = updatedResident.MiddleName;
                 existingResident.LastName = updatedResident.LastName;
                 existingResident.ShortName = updatedResident.ShortName;
                 existingResident.Gender = updatedResident.Gender;
@@ -73,9 +73,10 @@ namespace Township_API.Controllers
 
 
                 _context.Entry(existingResident).State = EntityState.Modified;
-                await _context.SaveChangesAsync(); 
-                 
-                return Ok(existingResident);
+                await _context.SaveChangesAsync();
+
+                return Ok(new { Message = $"Resident updated successfully", IDNumber = existingResident.IDNumber });
+
             }
             catch (Exception ex)
             {
@@ -103,7 +104,8 @@ namespace Township_API.Controllers
             int number = (int)AccessCardHolders.Resident;
             obj.IDNumber = number.ToString() + obj.ID.ToString("D5");
             await _context.SaveChangesAsync();
-            return Ok(obj);
+            return Ok(new { Message = $"Resident created successfully", IDNumber = obj.IDNumber });
+
         }
 
 
@@ -191,7 +193,7 @@ namespace Township_API.Controllers
                        existingobj.AadharCardId = objID.AadharCardId;
                        existingobj.VoterID = objID.VoterID;
                        existingobj.FirstName = objID.FirstName;
-                       existingobj.MiddletName = objID.MiddletName;
+                       existingobj.MiddleName = objID.MiddleName;
                        existingobj.LastName = objID.LastName;
                        existingobj.ShortName = objID.ShortName;
                        existingobj.Gender = objID.Gender;
@@ -277,7 +279,7 @@ namespace Township_API.Controllers
             existingDependentResident.AadharCardId = updatedDependentResident.AadharCardId;
             existingDependentResident.VoterID = updatedDependentResident.VoterID;
             existingDependentResident.FirstName = updatedDependentResident.FirstName;
-            existingDependentResident.MiddletName = updatedDependentResident.MiddletName;
+            existingDependentResident.MiddleName = updatedDependentResident.MiddleName;
             existingDependentResident.LastName = updatedDependentResident.LastName;
             existingDependentResident.ShortName = updatedDependentResident.ShortName;
             existingDependentResident.Gender = updatedDependentResident.Gender;
@@ -318,7 +320,8 @@ namespace Township_API.Controllers
             int number = (int)AccessCardHolders.DependentResident;
             obj.IDNumber = number.ToString() + obj.ID.ToString("D5");
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok(new { message = $"Depenent Resident created successfully", idnumber = obj.IDNumber });
+
         }
 
 
@@ -366,7 +369,7 @@ namespace Township_API.Controllers
                         existingobj.AadharCardId = objID.AadharCardId;
                         existingobj.VoterID = objID.VoterID;
                         existingobj.FirstName = objID.FirstName;
-                        existingobj.MiddletName = objID.MiddletName;
+                        existingobj.MiddleName = objID.MiddleName;
                         existingobj.LastName = objID.LastName;
                         existingobj.ShortName = objID.ShortName;
                         existingobj.Gender = objID.Gender;

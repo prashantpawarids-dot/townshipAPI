@@ -19,7 +19,7 @@ namespace Township_API.Models
         public string? AadharCardId { get; set; }
         public string? VoterID { get; set; }
         public string? FirstName { get; set; }
-        public string? MiddletName { get; set; }
+        public string? MiddleName { get; set; }
         public string? LastName { get; set; }
         public string? ShortName { get; set; }
         public string? Gender { get; set; }
@@ -27,23 +27,47 @@ namespace Township_API.Models
         public DateTime? DOB { get; set; }
         public string? EmailID { get; set; }
         public string? MobileNo { get; set; }
-        public string? LandLine { get; set; } 
+        public string? LandLine { get; set; }
         public DateTime? CardIssueDate { get; set; }
         public DateTime? CardPrintingDate { get; set; }
         public DateTime? RegistrationIssueDate { get; set; }
         public int? LogicalDeleted { get; set; } = 0;
         public string? ContactPerson { get; set; } = null;
         public string? RegistrationNumber { get; set; } = null;
-	    public DateTime? ValidFromDate { get; set; }
+        public DateTime? ValidFromDate { get; set; }
         public DateTime? ValidToDate { get; set; }
         public string? Address { get; set; }
         public int? ContactorType { get; set; } = 0;
-         public string? Company { get; set; }
+        public string? Company { get; set; }
         public string? Agency { get; set; }
+        public int? Nbr { get; set; }
+
+        public string? NbrContractorLogo { get; set; }
+
         [NotMapped]
-        public string? ContractorTypeName { get; set; }=null;
+        public string? ContractorTypeName { get; set; } = null;
+
+        [NotMapped]
+        public string? DefaultNRDAccess { get; set; } = null;
+
+        [NotMapped]
+        public string? nbrName { get; set; } = null;
+
 
     }
+
+    public class ContractorAgency
+    {
+        //[Key]
+        public string? Agency { get; set; } = "";
+    }
+
+    public class ContractorCompany
+    {
+        //[Key]
+        public string? Company { get; set; } = "";
+    }
+
 
     [Table("DependentContractor")]
     public class DependentContractor
@@ -60,10 +84,10 @@ namespace Township_API.Models
         public string? LicenseNo { get; set; }
         public string? AadharCardId { get; set; }
         public string? VoterID { get; set; }
-        [Required] 
+        [Required]
         public string? FirstName { get; set; }
-        public string? MiddletName { get; set; }
-        [Required] 
+        public string? MiddleName { get; set; }
+        [Required]
         public string? LastName { get; set; }
         public string? ShortName { get; set; }
         public string? Gender { get; set; }
@@ -75,7 +99,7 @@ namespace Township_API.Models
         public DateTime? CardIssueDate { get; set; }
         public DateTime? CardPrintingDate { get; set; }
         public DateTime? RegistrationIssueDate { get; set; }
-        public int LogicalDeleted { get; set; }    
-}
-    
+        public int LogicalDeleted { get; set; }
+    }
+
 }

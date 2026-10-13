@@ -49,7 +49,7 @@ namespace Township_API.Controllers
                 existingLandowner.AadharCardId = updatedLandowner.AadharCardId;
                 existingLandowner.VoterID = updatedLandowner.VoterID;
                 existingLandowner.FirstName = updatedLandowner.FirstName;
-                existingLandowner.MiddletName = updatedLandowner.MiddletName;
+                existingLandowner.MiddleName = updatedLandowner.MiddleName;
                 existingLandowner.LastName = updatedLandowner.LastName;
                 existingLandowner.ShortName = updatedLandowner.ShortName;
                 existingLandowner.Gender = updatedLandowner.Gender;
@@ -69,7 +69,7 @@ namespace Township_API.Controllers
 
                 await _context.SaveChangesAsync();
 
-                return Ok(existingLandowner);
+                return Ok(new { Message = $"Landowner Updated successfully", IDNumber = existingLandowner.IDNumber });
             }
             catch (Exception ex)
             {
@@ -89,15 +89,13 @@ namespace Township_API.Controllers
                 if (existingLandowner != null)
                 {
                     return BadRequest("Landowner Exists.");
-                }
-
-                _context.Add(obj);
-                await _context.SaveChangesAsync();
+                }                  
+                _context.Add(obj); 
+                await _context.SaveChangesAsync();                
                 int number = (int)AccessCardHolders.Landowner;
                 obj.IDNumber = number.ToString() + obj.ID.ToString("D5");
                 await _context.SaveChangesAsync();
-
-                return Ok(new { message = $"{obj.ID} Landowner created successfully" });
+                return Ok(new { Message = $"Landowner created successfully", IDNumber = obj.IDNumber });
             }
             catch (Exception ex)
             {
@@ -203,7 +201,7 @@ namespace Township_API.Controllers
                         existingLandOwner.AadharCardId = objID.AadharCardId;
                         existingLandOwner.VoterID = objID.VoterID;
                         existingLandOwner.FirstName = objID.FirstName;
-                        existingLandOwner.MiddletName = objID.MiddletName;
+                        existingLandOwner.MiddleName = objID.MiddleName;
                         existingLandOwner.LastName = objID.LastName;
                         existingLandOwner.ShortName = objID.ShortName;
                         existingLandOwner.Gender = objID.Gender;
@@ -284,7 +282,7 @@ namespace Township_API.Controllers
             existingDependentLandOwner.AadharCardId = updatedDLandOwner.AadharCardId;
             existingDependentLandOwner.VoterID = updatedDLandOwner.VoterID;
             existingDependentLandOwner.FirstName = updatedDLandOwner.FirstName;
-            existingDependentLandOwner.MiddletName = updatedDLandOwner.MiddletName;
+            existingDependentLandOwner.MiddleName = updatedDLandOwner.MiddleName;
             existingDependentLandOwner.LastName = updatedDLandOwner.LastName;
             existingDependentLandOwner.ShortName = updatedDLandOwner.ShortName;
 
@@ -315,9 +313,9 @@ namespace Township_API.Controllers
 
             int number = (int)AccessCardHolders.DependentLandowner;
             obj.IDNumber = number.ToString() + obj.ID.ToString("D5");
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();  
 
-            return Ok(new { message = $"{obj.ID} Dependent Landowner saved successfully" });
+            return Ok(new { message = $"Depenent Landowner created successfully", idnumber = obj.IDNumber });
         }
 
         [HttpGet]
@@ -362,7 +360,7 @@ namespace Township_API.Controllers
                         existingDependentLandOwner.AadharCardId = objID.AadharCardId;
                         existingDependentLandOwner.VoterID = objID.VoterID;
                         existingDependentLandOwner.FirstName = objID.FirstName;
-                        existingDependentLandOwner.MiddletName = objID.MiddletName;
+                        existingDependentLandOwner.MiddleName = objID.MiddleName;
                         existingDependentLandOwner.LastName = objID.LastName;
                         existingDependentLandOwner.ShortName = objID.ShortName;
                         existingDependentLandOwner.Gender = objID.Gender;

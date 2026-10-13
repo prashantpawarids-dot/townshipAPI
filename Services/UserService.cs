@@ -649,7 +649,7 @@ namespace Township_API.Services
             existingPrimaryLandowner.AadharCardId = updatedPrimaryLandowner.AadharCardId;
             existingPrimaryLandowner.VoterID = updatedPrimaryLandowner.VoterID;
             existingPrimaryLandowner.FirstName = updatedPrimaryLandowner.FirstName;
-            existingPrimaryLandowner.MiddletName = updatedPrimaryLandowner.MiddletName;
+            existingPrimaryLandowner.MiddleName = updatedPrimaryLandowner.MiddleName;
             existingPrimaryLandowner.LastName = updatedPrimaryLandowner.LastName;
             existingPrimaryLandowner.ShortName = updatedPrimaryLandowner.ShortName;
             existingPrimaryLandowner.Gender = updatedPrimaryLandowner.Gender;
@@ -706,7 +706,7 @@ namespace Township_API.Services
                         existingPrimaryLandowner.AadharCardId = updatedPrimaryLandowner.AadharCardId;
                         existingPrimaryLandowner.VoterID = updatedPrimaryLandowner.VoterID;
                         existingPrimaryLandowner.FirstName = updatedPrimaryLandowner.FirstName;
-                        existingPrimaryLandowner.MiddletName = updatedPrimaryLandowner.MiddletName;
+                        existingPrimaryLandowner.MiddleName = updatedPrimaryLandowner.MiddleName;
                         existingPrimaryLandowner.LastName = updatedPrimaryLandowner.LastName;
                         existingPrimaryLandowner.ShortName = updatedPrimaryLandowner.ShortName;
                         existingPrimaryLandowner.Gender = updatedPrimaryLandowner.Gender;
@@ -784,7 +784,7 @@ namespace Township_API.Services
             existingDependentLandowner.AadharCardId = updatedDependentLandowner.AadharCardId;
             existingDependentLandowner.VoterID = updatedDependentLandowner.VoterID;
             existingDependentLandowner.FirstName = updatedDependentLandowner.FirstName;
-            existingDependentLandowner.MiddletName = updatedDependentLandowner.MiddletName;
+            existingDependentLandowner.MiddleName = updatedDependentLandowner.MiddleName;
             existingDependentLandowner.LastName = updatedDependentLandowner.LastName;
             existingDependentLandowner.ShortName = updatedDependentLandowner.ShortName;
             existingDependentLandowner.Gender = updatedDependentLandowner.Gender;
@@ -841,7 +841,7 @@ namespace Township_API.Services
                         existingDependentLandOwner.AadharCardId = updatedDependentLandOwner.AadharCardId;
                         existingDependentLandOwner.VoterID = updatedDependentLandOwner.VoterID;
                         existingDependentLandOwner.FirstName = updatedDependentLandOwner.FirstName;
-                        existingDependentLandOwner.MiddletName = updatedDependentLandOwner.MiddletName;
+                        existingDependentLandOwner.MiddleName = updatedDependentLandOwner.MiddleName;
                         existingDependentLandOwner.LastName = updatedDependentLandOwner.LastName;
                         existingDependentLandOwner.ShortName = updatedDependentLandOwner.ShortName;
                         existingDependentLandOwner.Gender = updatedDependentLandOwner.Gender;
@@ -917,7 +917,7 @@ namespace Township_API.Services
             existingPrimaryResident.AadharCardId = updatedPrimaryResident.AadharCardId;
             existingPrimaryResident.VoterID = updatedPrimaryResident.VoterID;
             existingPrimaryResident.FirstName = updatedPrimaryResident.FirstName;
-            existingPrimaryResident.MiddletName = updatedPrimaryResident.MiddletName;
+            existingPrimaryResident.MiddleName = updatedPrimaryResident.MiddleName;
             existingPrimaryResident.LastName = updatedPrimaryResident.LastName;
             existingPrimaryResident.ShortName = updatedPrimaryResident.ShortName;
             existingPrimaryResident.Gender = updatedPrimaryResident.Gender;
@@ -974,7 +974,7 @@ namespace Township_API.Services
                         existingPrimaryResident.AadharCardId = updatedPrimaryResident.AadharCardId;
                         existingPrimaryResident.VoterID = updatedPrimaryResident.VoterID;
                         existingPrimaryResident.FirstName = updatedPrimaryResident.FirstName;
-                        existingPrimaryResident.MiddletName = updatedPrimaryResident.MiddletName;
+                        existingPrimaryResident.MiddleName = updatedPrimaryResident.MiddleName;
                         existingPrimaryResident.LastName = updatedPrimaryResident.LastName;
                         existingPrimaryResident.ShortName = updatedPrimaryResident.ShortName;
                         existingPrimaryResident.Gender = updatedPrimaryResident.Gender;
@@ -1050,7 +1050,7 @@ namespace Township_API.Services
             existingDependentResident.AadharCardId = updatedDependentResident.AadharCardId;
             existingDependentResident.VoterID = updatedDependentResident.VoterID;
             existingDependentResident.FirstName = updatedDependentResident.FirstName;
-            existingDependentResident.MiddletName = updatedDependentResident.MiddletName;
+            existingDependentResident.MiddleName = updatedDependentResident.MiddleName;
             existingDependentResident.LastName = updatedDependentResident.LastName;
             existingDependentResident.ShortName = updatedDependentResident.ShortName;
             existingDependentResident.Gender = updatedDependentResident.Gender;
@@ -1108,7 +1108,7 @@ namespace Township_API.Services
                         existingDependentResident.AadharCardId = updatedDependentResident.AadharCardId;
                         existingDependentResident.VoterID = updatedDependentResident.VoterID;
                         existingDependentResident.FirstName = updatedDependentResident.FirstName;
-                        existingDependentResident.MiddletName = updatedDependentResident.MiddletName;
+                        existingDependentResident.MiddleName = updatedDependentResident.MiddleName;
                         existingDependentResident.LastName = updatedDependentResident.LastName;
                         existingDependentResident.ShortName = updatedDependentResident.ShortName;
                         existingDependentResident.Gender = updatedDependentResident.Gender;
@@ -1185,7 +1185,7 @@ namespace Township_API.Services
             existingPrimaryTenent.AadharCardId = updatedPrimaryTenent.AadharCardId;
             existingPrimaryTenent.VoterID = updatedPrimaryTenent.VoterID;
             existingPrimaryTenent.FirstName = updatedPrimaryTenent.FirstName;
-            existingPrimaryTenent.MiddletName = updatedPrimaryTenent.MiddletName;
+            existingPrimaryTenent.MiddleName = updatedPrimaryTenent.MiddleName;
             existingPrimaryTenent.LastName = updatedPrimaryTenent.LastName;
             existingPrimaryTenent.ShortName = updatedPrimaryTenent.ShortName;
             existingPrimaryTenent.Gender = updatedPrimaryTenent.Gender;
@@ -1248,7 +1248,7 @@ namespace Township_API.Services
                         existingPrimaryTenent.AadharCardId = updatedPrimaryTenent.AadharCardId;
                         existingPrimaryTenent.VoterID = updatedPrimaryTenent.VoterID;
                         existingPrimaryTenent.FirstName = updatedPrimaryTenent.FirstName;
-                        existingPrimaryTenent.MiddletName = updatedPrimaryTenent.MiddletName;
+                        existingPrimaryTenent.MiddleName = updatedPrimaryTenent.MiddleName;
                         existingPrimaryTenent.LastName = updatedPrimaryTenent.LastName;
                         existingPrimaryTenent.ShortName = updatedPrimaryTenent.ShortName;
                         existingPrimaryTenent.Gender = updatedPrimaryTenent.Gender;
@@ -1329,7 +1329,7 @@ namespace Township_API.Services
             existingDependentTenent.AadharCardId = updatedDependentTenent.AadharCardId;
             existingDependentTenent.VoterID = updatedDependentTenent.VoterID;
             existingDependentTenent.FirstName = updatedDependentTenent.FirstName;
-            existingDependentTenent.MiddletName = updatedDependentTenent.MiddletName;
+            existingDependentTenent.MiddleName = updatedDependentTenent.MiddleName;
             existingDependentTenent.LastName = updatedDependentTenent.LastName;
             existingDependentTenent.ShortName = updatedDependentTenent.ShortName;
             existingDependentTenent.Gender = updatedDependentTenent.Gender;
@@ -1390,7 +1390,7 @@ namespace Township_API.Services
                         existingDependentTenent.AadharCardId = updatedDependentTenent.AadharCardId;
                         existingDependentTenent.VoterID = updatedDependentTenent.VoterID;
                         existingDependentTenent.FirstName = updatedDependentTenent.FirstName;
-                        existingDependentTenent.MiddletName = updatedDependentTenent.MiddletName;
+                        existingDependentTenent.MiddleName = updatedDependentTenent.MiddleName;
                         existingDependentTenent.LastName = updatedDependentTenent.LastName;
                         existingDependentTenent.ShortName = updatedDependentTenent.ShortName;
                         existingDependentTenent.Gender = updatedDependentTenent.Gender;

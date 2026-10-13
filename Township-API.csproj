@@ -5,13 +5,46 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Township_API</RootNamespace>
+    <Company>$(Authors-NanaBaviskar)</Company>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controller\ANPRController_old.cs" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="SemacV14">
+			<HintPath>Libs\SemacV14.dll</HintPath>
+			<Private>true</Private>
+		</Reference>
+		<Reference Include="SomeControls">
+			<HintPath>Libs\SomeControls.dll</HintPath>
+			<Private>true</Private>
+		</Reference>
+	</ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EventFlow.EntityFramework" Version="1.2.0" />
+    <PackageReference Include="ImageKit" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.2.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Libs\" />
   </ItemGroup>
 
 </Project>

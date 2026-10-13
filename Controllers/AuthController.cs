@@ -12,6 +12,8 @@ using Microsoft.Data.SqlClient;
 using static System.Net.Mime.MediaTypeNames;
 using Image = Township_API.Models.Image;
 using System.ComponentModel;
+using System.Data;
+ 
 
 
 namespace Township_API.Controllers
@@ -41,11 +43,12 @@ namespace Township_API.Controllers
             if (user != null)
             {
                 if (user.Count > 0)
-                {
-                    var role = user[0].Role;
+                { 
                     //  var roles = await _context.Roles.Where(p => p.RoleID == user[0].roleID).FirstOrDefault();
-                    // var token = GenerateJwtToken(user, roles);
-                    return Ok(user);
+                    // var token = GenerateJwtToken(user[0], roles);
+                    var token = GenerateJwtToken(user[0].name);
+                    return Ok(new { token });
+                    //return Ok(user);
                 }
             }
             return Unauthorized();
@@ -73,6 +76,29 @@ namespace Township_API.Controllers
             var tokenHandler = new JwtSecurityTokenHandler();
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+        private string GenerateJwtToken(string username)
+        {
+            var jwtSettings = _configuration.GetSection("Jwt:Key");
+
+            var claims = new[]
+            {
+            new Claim(JwtRegisteredClaimNames.Sub, username),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+        };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]!));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: jwtSettings["Issuer"],
+                audience: jwtSettings["Audience"],
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(jwtSettings["ExpireMinutes"])),
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
         [HttpGet("CardHolderSearch/{search}")]
@@ -227,17 +253,30 @@ namespace Township_API.Controllers
                 await file.CopyToAsync(ms);
                 var imageData = ms.ToArray();
 
-                var imageEntity = new Image
+
+                var existFile = _context.Images.Where(p => p.FileName == file.FileName).FirstOrDefault();
+                if (existFile != null)
+                {
+                    existFile.FileName = file.FileName;
+                    existFile.ContentType = file.ContentType;
+                    existFile.Data = imageData;
+                    _context.Entry(existFile).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                    return Ok(existFile);
+                }
+                else 
+                {
+                    var imageEntity = new Image
                 {
                     FileName = file.FileName,
                     ContentType = file.ContentType,
                     Data = imageData
                 };
-
-                _context.Images.Add(imageEntity);
-                await _context.SaveChangesAsync();
-
-                return Ok(new { imageEntity.ImageId });
+                    _context.Images.Add(imageEntity);
+                    await _context.SaveChangesAsync();
+                    return Ok(new { imageEntity.ImageId });
+                }
+                
             }
             catch (Exception ex)
             {

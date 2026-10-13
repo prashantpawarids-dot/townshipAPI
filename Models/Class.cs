@@ -10,7 +10,7 @@ namespace Township_API.Models
         [Key]
         public int id { get; set; }
         [Required]
-        public string comanyCode { get; set; }
+        public string companyCode { get; set; }
         [Required]
         public string companyName { get; set; }
         public string? city { get; set; }

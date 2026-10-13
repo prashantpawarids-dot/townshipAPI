@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Data;
 using System.Numerics;
 using static Township_API.Models.commonTypes;
+using System.Linq;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Township_API.Controllers
 {
@@ -48,7 +50,7 @@ namespace Township_API.Controllers
                 }
                 //               existingServiceProvider.IDNumber = updatedServiceProvider.IDNumber;
                 existingServiceProvider.FirstName = updatedServiceProvider.FirstName;
-                existingServiceProvider.MiddletName = updatedServiceProvider.MiddletName;
+                existingServiceProvider.MiddleName = updatedServiceProvider.MiddleName;
                 existingServiceProvider.LastName = updatedServiceProvider.LastName;
                 existingServiceProvider.ShortName = updatedServiceProvider.ShortName;
                 existingServiceProvider.ServiceTypeId = updatedServiceProvider.ServiceTypeId;
@@ -81,8 +83,7 @@ namespace Township_API.Controllers
 
                 _context.Entry(existingServiceProvider).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
-
-                return Ok(existingServiceProvider);
+                return Ok(new { Message = $"ServiceProvided Added successfully", IDNumber = existingServiceProvider.IDNumber });
             }
             catch (Exception ex)
             {
@@ -121,7 +122,7 @@ namespace Township_API.Controllers
 
                 await _context.SaveChangesAsync();
 
-                return Ok(new { message = $"{obj.IDNumber} ServiceProvider processed successfully" });
+                return Ok(new { message = $"ServiceProvider processed successfully", IDnumber = obj.IDNumber });
             }
             catch (Exception ex)
             {
@@ -131,15 +132,48 @@ namespace Township_API.Controllers
 
 
         // GET: api/products 
-        [HttpGet("ServiceProvider")]
+        [HttpGet("GetAllResidentTenents")]
+        public async Task<IActionResult> GetAllResidentTenents(string buildingid = null, string flatNumber = null)
+        {
+
+            var Residents = await _context.PrimaryResidents.Where(p => p.Building.ToString() == (String.IsNullOrEmpty(buildingid) ? p.Building.ToString() : buildingid.ToString()) && p.FlatNumber == (String.IsNullOrEmpty(flatNumber) ? p.FlatNumber : flatNumber)).Select(p => new { p.ShortName, p.MobileNo }).ToListAsync();
+            var Tenants = await _context.PrimaryTenents.Where(p => p.Building.ToString() == (String.IsNullOrEmpty(buildingid) ? p.Building.ToString() : buildingid.ToString()) && p.FlatNumber == (String.IsNullOrEmpty(flatNumber) ? p.FlatNumber : flatNumber)).Select(p => new { p.ShortName, p.MobileNo }).ToListAsync();
+            var result = new
+            {
+                residents = Residents,
+                tenants = Tenants
+            };
+
+            return Ok(result);
+        }
+
+        // GET: api/products 
+        [HttpGet("GetCurrentResidents/")]
+        public async Task<IActionResult> GetCurrentResidents(string building = null, string flatNumber = null)
+        {
+
+            object result;
+            if(  building != null && flatNumber != null)
+                result = await _context._CurrentResidents.Where(p=>p.Building == building  && p.FlatNumber ==  flatNumber) .ToListAsync();
+            else
+                result = await _context._CurrentResidents.ToListAsync();
+
+            //var result = await _context._CurrentResidents.Where(p=>p.Building== building  && p.FlatNumber== flatNumber ).ToListAsync();
+
+            return Ok(result);
+        }
+
+
+        // GET: api/products 
+        [HttpGet("GetAllServiceProviders")]
         public async Task<IActionResult> GetAllServiceProviders()
         {
-            var ServiceProviders = await _context.ServiceProviders.Where(p=>p.isActive==1 && p.isDeleted ==0 ) .OrderByDescending(p => p.ID).ToListAsync();
+            var ServiceProviders = await _context.ServiceProviders.Where(p => p.isActive == 1 && p.isDeleted == 0).OrderByDescending(p => p.ID).ToListAsync();
             foreach (var res in ServiceProviders)
             {
                 var nr = await _context.ModuleData.Where(u => u.ID.ToString() == res.ServiceTypeId.ToString()).FirstOrDefaultAsync();
                 if (nr != null)
-                    res.serviceType = (string)nr.Name.ToString(); 
+                    res.serviceType = (string)nr.Name.ToString();
             }
 
             return Ok(ServiceProviders);
@@ -202,7 +236,7 @@ namespace Township_API.Controllers
 
                         existingServiceProvider.IDNumber = objID.IDNumber;
                         existingServiceProvider.FirstName = objID.FirstName;
-                        existingServiceProvider.MiddletName = objID.MiddletName;
+                        existingServiceProvider.MiddleName = objID.MiddleName;
                         existingServiceProvider.LastName = objID.LastName;
                         existingServiceProvider.ShortName = objID.ShortName;
                         existingServiceProvider.ServiceTypeId = objID.ServiceTypeId;

@@ -20,7 +20,7 @@ namespace Township_API.Models
         public string? VoterID { get; set; }
         [Required]
         public string FirstName { get; set; }
-        public string? MiddletName { get; set; }
+        public string? MiddleName { get; set; }
         [Required]
         public string LastName { get; set; }
         public string? ShortName { get; set; }
@@ -30,9 +30,9 @@ namespace Township_API.Models
         public string? EmailID { get; set; }
         public string? MobileNo { get; set; }
         public string? LandLine { get; set; }
-        [Required]
+       
         public string? NRD { get; set; }
-        [Required]
+
         public string? Building { get; set; }
         public string? FlatNumber { get; set; }
         public DateTime? CardIssueDate { get; set; }
@@ -72,7 +72,7 @@ namespace Township_API.Models
         [MaxLength(50)] 
         public string? FirstName { get; set; }
         [MaxLength(50)]
-        public string? MiddletName { get; set; }
+        public string? MiddleName { get; set; }
         [MaxLength(50)]
         [Required]
         public string? LastName { get; set; }
